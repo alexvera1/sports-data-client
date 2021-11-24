@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Project 2 Player Data</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,65 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Golden State Warriors Player Stats</h1>
+ 
+ <!-- Sign up form goes here-->
+
+ <section id="before-sign-in">
+
+  <form id="sign-up" class="border">
+    <fieldset>
+      <legend>Sign Up</legend>
+      <input type="email" name="credentials[email]" placeholder="Email" required>
+      <input type="password" name="credentials[password]" placeholder="Password" required>
+      <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
+
+      <button class="btn btn-primary">Sign Up!</button>
+    </fieldset>
+  </form>
+
+  <!-- Sign in form goes here-->
+
+  <form id="sign-in" class="border">
+    <fieldset>
+      <legend>Sign In</legend>
+      <input type="email" name="credentials[email]" placeholder="Email" required>
+      <input type="password" name="credentials[password]" placeholder="Password" required>
+
+      <button class="btn btn-primary">Sign In!</button>
+    </fieldset>
+  </form>
+</section>
+
+
+<!-- We only want this section to be visible after we sign in.
+     By default it should not be displayed. -->
+<section id="after-sign-in">
+
+  <form id="change-password" class="border">
+    <fieldset>
+      <legend>Change Password</legend>
+      <input type="password" name="passwords[old]" placeholder="Old Password" required>
+      <input type="password" name="passwords[new]" placeholder="New Password" required>
+
+      <button class="btn btn-primary">Change Password</button>
+    </fieldset>
+  </form>
+
+    <form id="sign-out" class="border">
+      <fieldset>
+        <legend>Sign Out</legend>
+
+        <button class="btn btn-primary">Sign Out</button>
+      </fieldset>
+    </form>
+  </section>
+
+    
+      <!-- create a section for our user feedback -->
+      <section>
+        <div id="error-message"></div>
+        <div id="login-display"></div>
+      </section>
     </body>
 </html>
