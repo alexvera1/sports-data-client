@@ -1,1 +1,30 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+#after-sign-in {
+    display: none;
+}
+
+body {
+    background-color: #006BB6;
+}
+
+h1 {
+    color: #FFC72C;
+}
+
+h2 {
+    color: #FFC72C;
+}
+
+#sign-up {
+    color:#FFC72C
+}
+
+#sign-in {
+    color:#FFC72C
+}
+
+.success {
+    color: white;
+}
