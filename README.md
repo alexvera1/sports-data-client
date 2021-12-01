@@ -49,4 +49,4 @@ This application allows the user to create, read, update, and destroy player dat
 
 
 ### ERD
-[ERD](https://imgur.com/kl2kwAn)
+[Imgur](https://imgur.com/c25nAPe)

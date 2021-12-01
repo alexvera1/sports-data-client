@@ -13,11 +13,6 @@ const index = function () {
     headers: {
         Authorization: 'Bearer ' + store.user.token
     }
-
-    // Bad practice: We are hard coding the url to our API below.
-    // This is bad, because in future units, we will have multiple APIS
-    // (a local and deployed API.)
-    // url: 'https://library-express-api.herokuapp.com/books'
   })
 }
 
@@ -92,4 +87,3 @@ module.exports = {
   update,
   create
 }
-// console.log('the module.exports object is', module.exports)

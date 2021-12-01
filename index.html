@@ -25,7 +25,7 @@
       <input type="password" name="credentials[password]" placeholder="Password" required>
       <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
 
-      <button class="btn btn-primary">Sign Up!</button>
+      <button class="btn btn-warning">Sign Up!</button>
     </fieldset>
   </form>
 
@@ -37,7 +37,7 @@
       <input type="email" name="credentials[email]" placeholder="Email" required>
       <input type="password" name="credentials[password]" placeholder="Password" required>
 
-      <button class="btn btn-primary">Sign In!</button>
+      <button class="btn btn-warning">Sign In!</button>
     </fieldset>
   </form>
 </section>
@@ -52,26 +52,21 @@
       <legend>Change Password</legend>
       <input type="password" name="passwords[old]" placeholder="Old Password" required>
       <input type="password" name="passwords[new]" placeholder="New Password" required>
-
-      <button class="btn btn-primary">Change Password</button>
+      <button class="btn btn-warning">Change Password</button>
     </fieldset>
   </form>
 
     <form id="sign-out" class="border">
       <fieldset>
         <legend>Sign Out</legend>
-
-        <button class="btn btn-primary">Sign Out</button>
+        <button class="btn btn-warning">Sign Out</button>
       </fieldset>
     </form>
-  </section>
-      <!-- create a section for our user feedback -->
-      <section>
-        <div id="login-display"></div>
-      </section>
+
+      
 
 <!-----------------Player CRUD---------------->
-<h1>🏀 Player CRUD 🏀</h1>
+<h1>🏀 Player Roster 🏀</h1>
       <main>
         <section>
           <h2>Get All Players</h2>
@@ -125,13 +120,12 @@
         </section>
 
         <section>
-          <!-- This div will initially be empty, but if an error occurs, 
-          we will show it here -->
+          <!-- create a section for our user feedback -->
+          <div id="login-display"></div>
           <div id="error-message"></div>
-          <!-- This div will initially be empty, but we will display info we got back from the API here -->
           <div id="players-display"></div>
         </section>
       </main>
-
-    </body>
+    </section>
+  </body>
 </html>

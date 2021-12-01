@@ -19,15 +19,16 @@ const onIndexPlayersSuccess = function (responseData) {
       <p>college: ${player.college}</p>
       <p>draft: ${player.draft}</p>
       <p>ID: ${player._id}</p>
-        <!-- Add the book's id to the delete button. We can access
+        <!-- Add the players's id to the delete button. We can access
              it with jQuery's .data() method later in events.js -->
-        <button class="books-destroy-dynamic" data-id=${player._id} data-title="${player.title}">
-          Destroy Book
-        </button>
+        <button class="players-destroy-dynamic" data-id=${player._id} data-title="${player.title}">Destroy Player</button>
 				<form id ="update-form">
-            <input type="text" name="book[title]" placeholder="Title" required>
-            <input type="text" name="book[author]" placeholder="Author" required>
-						<button>Update Book</button>
+            <input type="text" name="player[name]" placeholder="Name" required>
+            <input type="text" name="player[position]" placeholder="Position" required>
+            <input type="text" name="player[number]" placeholder="Number" required>
+            <input type="text" name="player[college]" placeholder="College" required>
+            <input type="text" name="player[draft]" placeholder="Draft" required>
+						<button>Update Player</button>
 				</form>
       </div>
     `;
@@ -46,9 +47,12 @@ const onShowPlayerSuccess = function (responseData) {
 	// create the html to display a single book
 	const playerHtml = `
     <div>
-      <h4>Title: ${player.title}</h4>
-      <p>Author: ${player.author}</p>
-      <p>ID: ${player._id}</p>
+    <h4>Name: ${player.name}</h4>
+    <p>Position: ${player.position}</p>
+    <p>Number: ${player.number}</p>
+    <p>College: ${player.college}</p>
+    <p>Draft: ${player.draft}</p>
+    <p>ID: ${player._id}</p>
     </div>
   `;
 
@@ -100,13 +104,6 @@ const onUpdatePlayerSuccess = function () {
 };
 
 
-
-
-// just tell the user you created the book
-// const onCreateBookSuccess = function () {
-//   $('#books-display').text('Book was created successfully')
-// }
-
 // show the book after it is created
 const onCreatePlayerSuccess = function (responseData) {
 	// extract the book object from our response's data
@@ -118,10 +115,10 @@ const onCreatePlayerSuccess = function (responseData) {
     <div>
     <h6>You Successfully added a player!</h6>
       <h4>Name: ${player.name}</h4>
-      <p>position: ${player.position}</p>
-      <p>number: ${player.number}</p>
-      <p>college: ${player.college}</p>
-      <p>draft: ${player.draft}</p>
+      <p>Position: ${player.position}</p>
+      <p>Number: ${player.number}</p>
+      <p>College: ${player.college}</p>
+      <p>Draft: ${player.draft}</p>
       <p>ID: ${player._id}</p>
     </div>
   `;
