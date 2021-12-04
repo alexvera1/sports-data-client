@@ -15,7 +15,7 @@ $(() => {
 
 // ------------------- PLAYER CRUD -------------------- //
 
-  // select the books-index button ($('#books-index'))
+  // select the books-index button ($('#players-index'))
   // whenever (on) a click event occurs, run the function
   $('#players-index').on('click', playerEvents.onIndexPlayers)
   // select the books-show form ($('#books-show'))
@@ -30,10 +30,6 @@ $(() => {
 
   $('#update-form').on('submit', playerEvents.onUpdateForm)
 
-
-  // $('#event-button').on('click', () => {
-  //   console.log('the event button was clicked')
-  // })
 
   $('#event-div').on('click', () => {
     console.log('the event button was clicked')

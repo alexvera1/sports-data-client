@@ -81,8 +81,7 @@ const onUpdatePlayer = (event) => {
 
   // make an HTTP request, to update a single book based on its id
   // pass `formData` to update the book with a new title & author
-  api
-    .update(id, formData)
+  api.update(id, formData)
   // if getting a single book was successful, update it on the page
     .then(ui.onUpdatePlayerSuccess)
   // otherwise, show an error message
@@ -118,7 +117,8 @@ const onDynamicDestroyPlayer = (event) => {
   const title = $(event.target).data('title')
 
   // make an HTTP request, to destroy a single book based on its id
-  api.destroy(id)
+  api
+  .destroy(id)
   // if destroying a single book was successful, show it on the page
     // .then(ui.onDestroyBookSuccess)
     // if we wanted to show the title after destroying a book, we could pass it down
