@@ -44,9 +44,10 @@ I started out with a user authentication form where the user could create an acc
 
 ## Images 
 
-### Wireframes
+#### Wireframes
 
 [User View Wireframe](https://imgur.com/1whMMHX)
+
 [Auth Wireframe](https://imgur.com/tSwNYFY)
 
 
