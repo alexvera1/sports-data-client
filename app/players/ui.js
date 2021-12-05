@@ -19,6 +19,7 @@ const onIndexPlayersSuccess = function (responseData) {
       <p>college: ${player.college}</p>
       <p>draft: ${player.draft}</p>
       <p>ID: ${player._id}</p>
+	  <p>owner: ${player.owner}</p>
         <!-- Add the players's id to the delete button. We can access
              it with jQuery's .data() method later in events.js -->
         <button class="players-destroy-dynamic" data-id=${player._id} data-title="${player.name}">Destroy Player</button>

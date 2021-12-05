@@ -154,10 +154,6 @@ const onUpdateForm = (event) => {
 }
 
 
-
-
-
-
 // export the `onIndexBooks` function, so that it can be `imported` and used
 // in `app.js`
 module.exports = {
