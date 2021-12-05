@@ -19,7 +19,6 @@ const onIndexPlayersSuccess = function (responseData) {
       <p>college: ${player.college}</p>
       <p>draft: ${player.draft}</p>
       <p>ID: ${player._id}</p>
-	  <p>owner: ${player.owner}</p>
         <!-- Add the players's id to the delete button. We can access
              it with jQuery's .data() method later in events.js -->
         <button class="players-destroy-dynamic" data-id=${player._id} data-title="${player.name}">Destroy Player</button>
@@ -60,7 +59,7 @@ const onShowPlayerSuccess = function (responseData) {
 // give the title parameter the default of 'Book'
 const onDestroyPlayerSuccess = function (name = 'Player') {
 	// showing the title of the book that was destroyed
-	$('#players-display').text(`${name}} was destroyed successfully`);
+	$('#players-display').text(`${name} was destroyed successfully`);
 
 	// $('#books-display').text('Book was destroyed successfully')
 	// select the div with the id `books-display` add the bootstrap
