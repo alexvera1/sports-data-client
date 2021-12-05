@@ -1,0 +1,49 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+#after-sign-in {
+    display: none;
+}
+
+body {
+    background-color: #1D428A;
+    //background-color: black;
+    text-align: center;
+    padding-left: 50px ;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.border {
+    border: 10px solid black;
+    margin: 20px;
+    padding: 20px;
+    color:black;
+  }
+
+p {
+    color: white;
+}
+
+h1 {
+    color: #FFC72C;
+    font-family: Copperplate Bold (WARRIORS);
+    font-weight: bold;
+}
+
+h2 {
+    color: #FFC72C;
+}
+
+h4 {
+    color: white;
+}
+#sign-up {
+    color:#FFC72C;
+}
+
+#sign-in {
+    color:#FFC72C;
+}
+

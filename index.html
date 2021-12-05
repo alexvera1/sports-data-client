@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Project 2 Player Data</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Golden State Warriors Player FAQs</h1>
+ 
+ <!-- Sign up form goes here-->
+
+ <section id="before-sign-in">
+
+  <form id="sign-up" class="border">
+    <fieldset>
+      <legend>Sign Up</legend>
+      <input type="email" name="credentials[email]" placeholder="Email" required>
+      <input type="password" name="credentials[password]" placeholder="Password" required>
+      <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
+
+      <button class="btn btn-warning">Sign Up!</button>
+    </fieldset>
+  </form>
+
+  <!-- Sign in form goes here-->
+
+  <form id="sign-in" class="border">
+    <fieldset>
+      <legend>Sign In</legend>
+      <input type="email" name="credentials[email]" placeholder="Email" required>
+      <input type="password" name="credentials[password]" placeholder="Password" required>
+
+      <button class="btn btn-warning">Sign In!</button>
+    </fieldset>
+  </form>
+</section>
+
+
+<!-- We only want this section to be visible after we sign in.
+     By default it should not be displayed. -->
+<section id="after-sign-in">
+
+  <form id="change-password" class="border">
+    <fieldset>
+      <legend>Change Password</legend>
+      <input type="password" name="passwords[old]" placeholder="Old Password" required>
+      <input type="password" name="passwords[new]" placeholder="New Password" required>
+      <button class="btn btn-warning">Change Password</button>
+    </fieldset>
+  </form>
+
+    <form id="sign-out" class="border">
+      <fieldset>
+        <legend>Sign Out</legend>
+        <button class="btn btn-warning">Sign Out</button>
+      </fieldset>
+    </form>
+
+      
+
+<!-----------------Player CRUD---------------->
+<h1>🏀 Player Roster 🏀</h1>
+      <main>
+        <section>
+          <h2>Get All Players</h2>
+          <button id="players-index">Get All Players</button>
+          <hr>
+
+          <h2>Get One Player</h2>
+          <form id="players-show">
+            <input type="text" name="player[id]" placeholder="Player ID" required>
+            <!-- Since this button is inside a form, 
+                 it has the type="submit" by default. 
+                 Which means if the button is clicked, the form is submitted.-->
+            <button>Get Player</button>
+          </form>
+
+          <h2>Destroy One player</h2>
+          <form id="players-destroy">
+            <input type="text" name="player[id]" placeholder="Player ID" required>
+            <!-- Since this button is inside a form, 
+                 it has the type="submit" by default. 
+                 Which means if the button is clicked, the form is submitted.-->
+            <button>Destroy Player</button>
+          </form>
+
+          <h2>Update One Player</h2>
+          <form id="players-update">
+            <input type="text" name="player[id]" placeholder="Player ID" required>
+            <input type="text" name="player[name]" placeholder="Name" required>
+            <input type="text" name="player[position]" placeholder="Position" required>
+            <input type="text" name="player[number]" placeholder="Number" required>
+            <input type="text" name="player[college]" placeholder="College" required>
+            <input type="text" name="player[draft]" placeholder="Draft" required>
+            <!-- Since this button is inside a form, 
+                 it has the type="submit" by default. 
+                 Which means if the button is clicked, the form is submitted.-->
+            <button>Update Player</button>
+          </form>
+
+          <h2>Create a Player</h2>
+          <form id="players-create">
+            <input type="text" name="player[name]" placeholder="Name" required>
+            <input type="text" name="player[position]" placeholder="Position" required>
+            <input type="text" name="player[number]" placeholder="Number" required>
+            <input type="text" name="player[college]" placeholder="College" required>
+            <input type="text" name="player[draft]" placeholder="Draft" required>
+            <!-- Since this button is inside a form, 
+                 it has the type="submit" by default. 
+                 Which means if the button is clicked, the form is submitted.-->
+            <button>Create Player</button>
+          </form>
+        </section>
+
+        <section>
+          <!-- create a section for our user feedback -->
+          <div id="login-display"></div>
+          <div id="error-message"></div>
+          <div id="players-display"></div>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>

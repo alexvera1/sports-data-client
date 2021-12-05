@@ -1,0 +1,8 @@
+<form id ="update-form">
+             <input type="text" name="player[name]" placeholder="Name" required>
+            <input type="text" name="player[position]" placeholder="Position" required>
+             <input type="text" name="player[number]" placeholder="Number" required>
+             <input type="text" name="player[college]" placeholder="College" required>
+             <input type="text" name="player[draft]" placeholder="Draft" required>
+			 			<button>Update Player</button>
+			 	</form>
